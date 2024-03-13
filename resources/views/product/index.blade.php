@@ -33,8 +33,8 @@
                         <td class="align-middle">{{ $products->description }}</td>
                         <td class="align-middle">
                             <div class="btn-group" role="group" aria-label="Basic example">
-                                <a href="" class="btn btn-secondary">Detail</a>
-                                <a href="" class="btn btn-warning">Edit</a>
+                                <a href="{{ route('product.show', $products->id) }}" type="button" class="btn btn-secondary">Detail</a>
+                                <a href="{{ route('product.edit', $products->id) }}" type="button" class="btn btn-warning">Edit</a>
                                 <button class="btn btn-danger m-0">Delete</button>
                             </div>
                         </td>
